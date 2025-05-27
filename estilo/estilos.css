@@ -1,0 +1,294 @@
+/* Daniel López Fernández UO289510 */
+
+/*Especifidad 001*/
+body {
+    font-family: "Century Gothic", sans-serif;
+    color: #575757;
+    background-color: #fff;
+}
+
+/*Especifidad 000*/
+*{
+    color:rgb(68, 68, 68);
+    /*background-color se hereda de body*/
+}
+
+/*Especifidad 011*/
+header{
+    background-color:#253452;
+    color: rgb(255, 255, 255);
+}
+
+/*Especifidad 001*/
+nav {
+    color:rgb(212, 211, 211);
+    font-size:large;
+    background-color:#253452;
+    /*background-color se hereda de header*/
+}
+
+/*Especifididad 001*/
+h1 {
+    color:rgb(255, 255, 255);
+    text-transform:uppercase;
+    /*background color se hereda de header*/
+}
+
+
+/*Especifidad 001*/
+h2 {
+    color:rgb(37, 37, 37);
+    font-size:x-large;
+    background-color:#E5E1E4;
+}
+
+/*Especifidad 001*/
+h3 {
+    color:rgb(57, 57, 57);
+    font-weight:bold;
+    background-color:#E5E1E4;
+    /*background-color se hereda de body*/
+}
+
+/*Especifidad 011*/
+p:first-of-type{
+    color:rgb(68, 68, 68);
+    font-size:medium;
+    /*background-color se hereda de body*/
+}
+
+/*Especifidad 012*/
+p:first-of-type a{
+    color:rgb(68, 68, 68);
+    font-size:medium;
+    /*background-color se hereda de body*/
+}
+
+li a:hover{
+    color:white;
+    background-color:#253452;
+    font-size:large;
+}
+
+/*Especifidad 001*/
+p {
+    color:rgb(68, 68, 68);
+    /*background-color se hereda de body*/
+}
+
+/*Especifidad 001*/
+dt {
+    text-decoration: underline;
+    font-weight: normal;
+    font-style:oblique;
+}
+
+/*Especifidad 011*/
+nav :link{
+    color:white;
+    /*background-color se hereda de header*/
+}
+
+/*Especifidad 011*/
+nav :visited{
+    color:#CEC4B1;
+    /*background-color se hereda de header*/
+}
+
+/*Especifidad 011*/
+h1 :link{
+    color:white;
+    text-decoration:none;
+    /*background-color se hereda de header*/
+
+}
+
+/*Especifidad 011*/
+h1 :visited{
+    color:white;
+    text-decoration:none;
+    /*background-color se hereda de header*/
+}
+
+/*Especifidad 001*/
+ul {
+    font-weight: bold;
+}
+
+/* Especifidad 003*/
+ul li::marker{
+    content:"►  ";
+    font-weight:bolder;
+    color:#253452;
+    /*background-color se hereda de body*/
+}
+
+/*Especifidad 002*/
+ul li{
+    margin-top:0.1em;
+}
+
+/*Especifidad 004*/
+ul ul > li::marker{
+    content:"•";
+    color:#253452;
+    /*background-color se hereda de body*/
+}
+
+/*Especifidad 003*/
+ol li::marker{
+    font-size:larger;
+    font-weight:bolder;
+    color:#253452;
+    /*background-color se hereda de body*/
+}
+
+/*Especifidad 003*/
+dl dt{
+    font-weight:bolder;
+    background-color:#E5E1E4;
+    display:inline;
+    margin-top: 1em;
+    /*color se hereda de body*/
+}
+
+/*Especifidad 004*/
+section p+picture img{
+    width:100%;
+    height:auto;
+}
+
+/*Especifidad 001*/
+video {
+    width:100%;
+    height:auto;
+}
+
+/*Especifidad 001*/
+table {
+    table-layout:fixed;
+    width:auto;
+    border-collapse: collapse;
+}
+
+/*Especifidad 001*/
+th {
+    text-align: center;
+    width: auto;
+    border: 1px solid #253452;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color:#E5E1E4;
+    /*color se hereda de body*/
+}
+/*Especifidad 001*/
+td{
+    text-align: center;
+    border: 1px solid #253452;
+}
+
+/*Especifidad 010*/
+.active{
+    color:#253452;
+    background-color: white;
+    font-size:x-large;
+    text-decoration: none;
+    border-top: 4px solid #E5E1E4;
+    border-right: 2px solid #E5E1E4;
+    border-left: 2px solid #E5E1E4;
+    border-bottom:0.1px solid transparent;
+}
+
+/*Especifidad 012*/
+nav a:hover{
+    color:#253452;
+    background-color: #E5E1E4;
+    font-size:x-large;
+}
+
+@media (465px <= width <= 799px){
+    header ~ p{
+        display:none;
+    }
+}
+
+/*Especifidad 003*/
+main section>div {
+    width: 500px;
+    height:500px;
+}
+
+main>article {
+    width: 100%;
+    max-width: 100vh;
+    height: 60vh;
+    position:relative;
+    overflow:hidden;
+    border-radius:1em;
+    margin:auto;
+}
+
+main>article img {
+    width:100%;
+    max-width:100vh;
+    height:auto;
+    position:absolute;
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius:0.5em;
+}
+
+main>article button {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+
+}
+
+main>article button:active{
+    transform:scale(1.1);
+}
+
+main>article button:nth-of-type(1){
+    top:50%;
+    right: 2%;
+}
+
+main>article button:nth-of-type(2){
+    top:50%;
+    left:2%;
+}
+
+/* section:nth-of-type(2){
+width: 14em;
+height:40em;
+position:relative;
+overflow-y: hidden;
+
+} */
+
+/* main>section:nth-of-type(2) {
+    display:grid;
+    grid-template-columns: repeat(3, 0.7fr);
+    gap: 5%;
+} */
+
+
+
+main>section:nth-of-type(2) article h3,
+main>section:nth-of-type(2) article p{
+    text-align: center;
+    align-items: center;
+}

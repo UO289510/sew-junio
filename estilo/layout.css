@@ -1,0 +1,14 @@
+/* Daniel López Fernández UO289510 */
+
+
+header{
+    flex:1;
+}
+
+nav {
+    flex:1;
+}
+
+nav:nth-of-type(3){
+    flex: 2;
+}
