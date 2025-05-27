@@ -14,11 +14,13 @@
         <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
         <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 
+        <script src="js/carrusel.js"></script>
+
     </head>
 
     <body>
         <header>
-            <h1><a href="index.html"> Las Regueras Desktop</a></h1>
+            <h1><a href="index.html"> Las Regueras</a></h1>
             <nav>
                 <a class="active" href="index.html"><span class="active">Inicio</span></a>
                 <a href="gastronomia.html">Gastronomia</a>
@@ -36,6 +38,20 @@
                 <h2>Inicio</h2>
             </section>
             
+            <script>
+
+                const carrusel = new Carrusel("multimedia/imagenes/",
+                    [   "carrusel1.jpg",
+                        "carrusel2.jpg",
+                        "carrusel3.jpg",
+                        "carrusel4.jpg",
+                        "carrusel5.jpg"
+                    ]
+                );
+
+
+
+            </script>
 
         </main>
     </body>

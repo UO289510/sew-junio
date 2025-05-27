@@ -18,7 +18,7 @@
 
     <body>
         <header>
-            <h1><a href="index.html"> Las Regueras Desktop</a></h1>
+            <h1><a href="index.html"> Las Regueras</a></h1>
             <nav>
                 <a href="index.html">Inicio</a>
                 <a class="active" href="gastronomia.html"><span class="active">Gastronomia</span></a>
@@ -31,11 +31,82 @@
         </header>
 
         <main>
-
-            <section>
-                <h2>Inicio</h2>
-            </section>
             
+            <!-- Lista ordenada -->
+            <h2>Donde comer: </h2>
+            <ol>
+                <li>Casa Florinda - 4.7 estrellas</li>
+                <li>Restaurante La Manduca - 4.6 estrellas</li>
+                <li>Casa Edelmiro - 4.5 estrellas</li>
+            </ol>
+
+            <!-- Lista no ordenada con una lista anidada -->
+            <h2>Platos reconocidos</h2>
+            <ul>
+                <li>Carne gobernada</li>
+                <li>Lechazo</li>
+                <li>Especialidades
+                <ul>
+                    <li>Fabadas y potes</li>
+                    <li>Reposteria tradicional</li>
+                </ul>
+                </li>
+            </ul>
+
+            <!-- Lista de definición -->
+            <h2>Glosario</h2>
+            <dl>
+                <dt>Carnes</dt>
+                <dd>Sus espléndidas carnes son el fundamento de los platos de mayor aceptación en esta zona.</dd>
+                <dt>Quesos</dt>
+                <dd>Como sus estupendos quesos frescos de "afuega'l pitu"</dd>
+                <dt>Especialidades típicas</dt>
+                <dd>Fabadas, potes, arroz con leche, cuajada, natillas...</dd>
+            </dl>
+
+            <!-- Tabla accesible y adaptable -->
+            <h2 id="tabla-cafe">Ingredientes y alergenos</h2>
+            <table aria-labelledby="tabla-cafe">
+                <thead>
+                <tr>
+                    <th scope="col">Plato</th>
+                    <th scope="col">Contiene</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Pitu de aldea con arroz</td>
+                    <td>Pollo, arroz, cebolla, jamón en trozos y pimientos</td>
+                </tr>
+                <tr>
+                    <td>Queso Afuega'l pitu</td>
+                    <td>Leche de vaca frisona o asturiana de los valles, sal y pimentón</td>
+                </tr>
+                <tr>
+                    <td>Carne gobernada</td>
+                    <td>Carne de vaca, verduras varias, vino blanco</td>
+                </tr>
+                <tr>
+                    <td>Lechazo</td>
+                    <td>Cordero, manteca, sal y guarnición variada</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Imagen adaptable y accesible -->
+            <h2>Galeria</h2>
+            <picture>
+                <source srcset="multimedia/imagenes/sarten.webp" type="image/webp">
+                <source srcset="multimedia/imagenes/sarten.jpg" type="image/jpeg">
+                <img src="multimedia/imagenes/sarten.jpg" alt="Una sarten de arroz con pollo, coronado con un huevo frito" style="max-width: 100%; height: auto;">
+            </picture>
+
+            <!-- Vídeo adaptable y accesible con 2 formatos -->
+            <h2>Las Regueras y la sidra</h2>
+            <video controls style="max-width: 100%; height: auto;">
+                <source src="multimedia/videos/video_sidras.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <source src="multimedia/videos/video_sidras.webm" type="video/webm; codecs=vp8">
+            </video>
 
         </main>
     </body>
