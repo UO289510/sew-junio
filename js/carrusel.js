@@ -23,7 +23,7 @@ class Carrusel {
             imagen.src = this.ruta + nombreArchivo;
             imagen.alt = "Imagen " + (index + 1);
 
-            contenedor.appendChild(img);
+            contenedor.appendChild(imagen);
         });
 
         var btnSiguiente = document.createElement("button");
