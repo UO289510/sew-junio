@@ -3,22 +3,25 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title> Las Regueras Desktop - Index </title>
+        <title> Las Regueras Desktop - Juego </title>
         <link rel="icon" href="multimedia/imagenes/favicon.ico">
 
         <meta name ="author" content ="Daniel López Fdez" />
         <meta name ="description" content ="Indice de la pagina web" />
-        <meta name ="keywords" content ="asturias, españa, regueras, las regueras" />
+        <meta name ="keywords" content ="juegos, test, pruebas, entretenimiento" />
         <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     
         <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
         <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/juego.js"></script>
+
     </head>
 
     <body>
         <header>
-            <h1><a href="index.html"> Las Regueras Desktop</a></h1>
+            <h1><a href="index.html"> Las Regueras</a></h1>
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="gastronomia.html">Gastronomia</a>
@@ -30,10 +33,16 @@
             </nav>
         </header>
 
+        <p>Estás en: <a href="index.html">Inicio</a> >> Juego </p>
+
         <main>
 
             <section>
-                <h2>Inicio</h2>
+                <h2>Juego</h2>
+                <h3>Prueba tus conocimientos con este juego, las respuestas se encuentran escondidas por la web. ¡Buscalas!</h3>
+                <script>
+                    var juego = new Juego();
+                </script>
             </section>
             
 

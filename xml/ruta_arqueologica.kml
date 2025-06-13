@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark><name>Termas romanas de Valduno</name><Point><coordinates>-6.005286111111111,43.391108333333335,60</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Iglesia de Santa Eulalia de Valdunu</name><Point><coordinates>-6.005038888888889,43.39095277777778,61</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Palacio de Bolgues</name><Point><coordinates>-6.016652777777778,43.40275555555555,115</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Iglesia de San Pedro de Nora</name><Point><coordinates>-5.961569444444445,43.369261111111115,88</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Iglesia de Valsera</name><Point><coordinates>-5.950033333333334,43.39391944444444,250</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Ruta 2</name><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode><coordinates>
+-6.005286111111111,43.391108333333335,60
+-6.005038888888889,43.39095277777778,61
+-6.016652777777778,43.40275555555555,115
+-5.961569444444445,43.369261111111115,88
+-5.950033333333334,43.39391944444444,250
+</coordinates></LineString></Placemark></Document></kml>

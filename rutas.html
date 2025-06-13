@@ -3,22 +3,26 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title> Las Regueras Desktop - Index </title>
+        <title> Las Regueras Desktop - Rutas </title>
         <link rel="icon" href="multimedia/imagenes/favicon.ico">
 
         <meta name ="author" content ="Daniel López Fdez" />
         <meta name ="description" content ="Indice de la pagina web" />
-        <meta name ="keywords" content ="asturias, españa, regueras, las regueras" />
+        <meta name ="keywords" content ="actividades, rutas, senderismo, gastronomia" />
         <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     
         <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
-        <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+        <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
+        <script src="js/rutas.js"></script>
 
     </head>
 
     <body>
         <header>
-            <h1><a href="index.html"> Las Regueras Desktop</a></h1>
+            <h1><a href="index.html"> Las Regueras</a></h1>
             <nav>
                 <a href="index.html">Inicio</a>
                 <a href="gastronomia.html">Gastronomia</a>
@@ -30,10 +34,17 @@
             </nav>
         </header>
 
+        <p>Estás en: <a href="index.html">Inicio</a> >> Rutas </p>
+
         <main>
 
             <section>
-                <h2>Inicio</h2>
+                <h2>Rutas</h2>
+                <p>Cargar XML: <input type="file" onchange="rutas.leerArchivoXML(this.files);"></p>
+                <script>
+                    var rutas = new Rutas();
+                </script>
+
             </section>
             
 

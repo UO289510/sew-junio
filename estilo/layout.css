@@ -1,14 +1,79 @@
 /* Daniel López Fernández UO289510 */
-
-
-header{
-    flex:1;
+header {
+  flex: 1;
 }
 
 nav {
-    flex:1;
+  flex: 1;
 }
 
-nav:nth-of-type(3){
-    flex: 2;
+nav:nth-of-type(3) {
+  flex: 2;
 }
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5%;
+}
+
+section article {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 0.2fr repeat(5, auto);
+  background-color: #8aa1ce;
+  border: 2px solid rgb(96, 96, 96);
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Título */
+section article h3 {
+  /* Sólo grid-row-start, nada de shorthand */
+  grid-row-start: 1;
+  /* para abarcar 2 columnas sin shorthand de grid-column */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top-right-radius: 5px;
+}
+
+/* Color común a todos los párrafos */
+section article p {
+  color: white;
+}
+
+/* Primer párrafo grande + margen izquierdo */
+section article p:first-of-type {
+  grid-row-start: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* Ahora sólo definimos margin-left, sin usar "margin: 0" */
+  margin-left: 1%;
+  font-size: 2em;
+}
+
+/* Imagen, única regla */
+section article img {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  width: 120%;
+  height: auto;
+}
+
+/* Párrafos 2–5: misma columna y márgenes, distinta fila */
+section article p:nth-of-type(n + 2) {
+  grid-column-start: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Sólo grid-row-start en cada uno, nada de shorthand que crearía grid-row-end */
+section article p:nth-of-type(2) { grid-row-start: 3; }
+section article p:nth-of-type(3) { grid-row-start: 4; }
+section article p:nth-of-type(4) { grid-row-start: 5; }
+section article p:nth-of-type(5) { grid-row-start: 6; }

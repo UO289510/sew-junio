@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="620" height="300" xmlns="http://www.w3.org/2000/svg">
+  <polyline points="60,240.0 160,239.05263157894737 260,187.89473684210526 360,213.47368421052633 460,60.0" stroke="blue" stroke-width="2" fill="none"/>
+  <text x="60" y="240.0" font-size="12" text-anchor="middle" transform="translate(-5,-10)">
+    60.0m (0.0m)
+  </text>
+  <text x="160" y="239.05263157894737" font-size="12" text-anchor="middle" transform="translate(-5,-10)">
+    61.0m (27.0m)
+  </text>
+  <text x="260" y="187.89473684210526" font-size="12" text-anchor="middle" transform="translate(-5,-10)">
+    115.0m (3227.0m)
+  </text>
+  <text x="360" y="213.47368421052633" font-size="12" text-anchor="middle" transform="translate(-5,-10)">
+    88.0m (13727.0m)
+  </text>
+  <text x="460" y="60.0" font-size="12" text-anchor="middle" transform="translate(-5,-10)">
+    250.0m (17227.0m)
+  </text>
+</svg>

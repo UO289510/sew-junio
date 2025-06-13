@@ -12,9 +12,11 @@
         <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     
         <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
-        <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="estilo/layout.css" /> -->
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/carrusel.js"></script>
+        <script src="js/noticias.js"></script>
 
     </head>
 
@@ -32,25 +34,30 @@
             </nav>
         </header>
 
+        <p>Estás en: <a href="index.html">Inicio</a> </p>
+
         <main>
 
             <section>
                 <h2>Inicio</h2>
             </section>
+
+            <article>
+                    <h3>Galeria</h3>
+                    <img src="multimedia/imagenes/carrusel1.jpg" alt="Imagen 1" />
+                    <img src="multimedia/imagenes/carrusel2.jpg" alt="Imagen 2" />
+                    <img src="multimedia/imagenes/carrusel3.jpg" alt="Imagen 3" />
+                    <img src="multimedia/imagenes/carrusel4.jpg" alt="Imagen 4" />
+                    <img src="multimedia/imagenes/carrusel5.jpg" alt="Imagen 5" />
+                    <button> &gt; </button>
+                    <button> &lt; </button>
+                </article>
+            <script>
+                var carrusel = new Carrusel();
+            </script>
             
             <script>
-
-                const carrusel = new Carrusel("multimedia/imagenes/",
-                    [   "carrusel1.jpg",
-                        "carrusel2.jpg",
-                        "carrusel3.jpg",
-                        "carrusel4.jpg",
-                        "carrusel5.jpg"
-                    ]
-                );
-
-
-
+                var noticias = new Noticias();
             </script>
 
         </main>

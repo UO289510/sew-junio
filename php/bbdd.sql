@@ -1,0 +1,7 @@
+CREATE USER 'DBUSER2025'@'Local' IDENTIFIED VIA mysql_native_password USING '***';GRANT ALL PRIVILEGES ON *.* TO 'DBUSER2025'@'Local' REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+
+CREATE TABLE `reservas`.`usuarios` (`id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(100) NOT NULL , `email` VARCHAR(100) NOT NULL , `password` VARCHAR(255) NOT NULL , `registered_date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `reservas`.`categoria` (`id` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(50) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `reservas`.`recursos` (`id` INT NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(100) NOT NULL , `descripcion` TEXT NOT NULL , `categoria_id` INT NOT NULL , `plazas` INT NOT NULL , `fecha_inicio` DATETIME NOT NULL , `fecha_fin` DATETIME NOT NULL , `precio` DECIMAL(10,2) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `reservas`.`reservas` (`id` INT NOT NULL AUTO_INCREMENT , `usuario_id` INT NOT NULL , `recurso_id` INT NOT NULL , `fecha_reserva` DATETIME NOT NULL , `estado` ENUM('confirmada','anulada') NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `reservas`.`log_reservas` (`id` INT NOT NULL AUTO_INCREMENT , `reserva_id` INT NOT NULL , `accion` ENUM('creada','anulada') NOT NULL , `fecha` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark><name>Casa Florinda</name><Point><coordinates>-6.018736111111111,43.399030555555555,86</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Restaurante La Manduca</name><Point><coordinates>-5.982,43.42981111111111,197</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Restaurante El Tendejón de Fernando</name><Point><coordinates>-5.948672222222222,43.392944444444446,250</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Restaurante Casa Edelmiro</name><Point><coordinates>-5.933661111111111,43.41880555555555,219</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Restaurante La Cabaña de Conce</name><Point><coordinates>-5.9704500000000005,43.414566666666666,183</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Ruta 1</name><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode><coordinates>
+-6.018736111111111,43.399030555555555,86
+-5.982,43.42981111111111,197
+-5.948672222222222,43.392944444444446,250
+-5.933661111111111,43.41880555555555,219
+-5.9704500000000005,43.414566666666666,183
+</coordinates></LineString></Placemark></Document></kml>

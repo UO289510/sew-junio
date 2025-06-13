@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
+
+<!-- <rutas xmlns="http://www.uniovi.es"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.uniovi.es rutas.xsd"> -->
+
+<rutas>
+    <ruta>
+        <caracteristicas>
+            <caracteristica 
+                nombreRuta = "Ruta del Pote y del Pitu Caleya"
+                tipo = "Gastronomica"
+                transporte = "Coche"
+                fecha_inicio = "2026-02-06"
+                duracion = "9 días"
+                agencia = "Sin agencia"
+                descripcion = "Una ruta que recorre los restaurantes colaboradores con las Jornadas del Pote y del Pitu Caleya en el concejo."
+                publico = "Todo publico"
+            />
+        </caracteristicas>
+
+        <inicio
+            lugar_inicio = "Casa Florinda"
+            direccion_inicio = "Carretera AS-234, Km 12"
+            longitud_inicio = "6º 1' 7.45'' W"
+            latitud_inicio = "43º 23' 56.51'' N"
+            altitud_inicio = "86"
+        />
+
+        <info
+            recomendacion = "7.5"        
+        />
+
+        <referencias>
+            <referencia enlace="https://las-regueras.vivirasturias.com/cocina-asturiana/c/0/i/61358359/jornadas-gastronomicas-pote-y-pitu-caleya-las-regueras"/>
+            <referencia enlace="https://www.lne.es/oviedo/2017/02/06/turismo-gastronomia-regueras-19395312.html"/>
+            <referencia enlace="https://eltapin.com/noticia/18441/pote-y-pitu-caleya-el-menu-de-las-xxvi-jornadas-gastronomicas-de-las-regueras"/>
+        </referencias>
+
+        <hitos>
+            <hito 
+                nombre="Casa Florinda" 
+                descripcion="El primer restaurante de la ruta" 
+                longitud="6º 1' 7.45'' W" 
+                latitud="43º 23' 56.51'' N" 
+                altitud="86" 
+                distancia="0">
+
+                <galeria_imagenes>
+                    <foto src = "multimedia/imagenes/casa_florinda.jpg" alt="casa florinda"/>
+                </galeria_imagenes>
+
+            </hito>
+
+            <hito 
+                nombre="Restaurante La Manduca" 
+                descripcion="La segunda parada del tour gastronomico" 
+                longitud="5° 58' 55.2'' W" 
+                latitud="43° 25' 47.32'' N" 
+                altitud="197" 
+                distancia="5100">
+
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/la_manduca.jpg" alt="la manduca"/>
+                </galeria_imagenes>
+
+            </hito>
+
+            <hito 
+                nombre="Restaurante El Tendejón de Fernando" 
+                descripcion="Tercer restaurante colaborador del tour gastronomico y de las jornadas." 
+                longitud="5° 56' 55.22'' W" 
+                latitud="43° 23' 34.6'' N" 
+                altitud="250" 
+                distancia="7800">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/el_tendejon.jpg" alt="el tendejon"/>
+                </galeria_imagenes>
+            </hito>
+
+            <hito 
+                nombre="Restaurante Casa Edelmiro" 
+                descripcion="Cuarta parada en el tour gastronomico." 
+                longitud="5° 56' 1.18'' W" 
+                latitud="43° 25' 7.70'' N" 
+                altitud="219" 
+                distancia="4000">
+
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/casa_edelmiro.jpg" alt="casa edelmiro"/>
+                </galeria_imagenes>
+
+            </hito>
+
+            <hito 
+                nombre="Restaurante La Cabaña de Conce" 
+                descripcion="Quinta y última parada del tour gastronomico, localizado en Santullano, la capital del concejo" 
+                longitud="5° 58' 13.62'' W" 
+                latitud="43° 24' 52.44'' N" 
+                altitud="183" 
+                distancia="20100">
+
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/la_cabaña_de_conce.jpg" alt="la cabaña de conce"/>
+                </galeria_imagenes>
+
+            </hito>
+            
+        </hitos>
+
+        <planimetria src="xml/ruta_gastronomica.kml"/>
+
+        <altimetria src="xml/ruta_gastronomica.svg" />
+    </ruta>
+
+    <ruta>
+
+        <caracteristicas>
+                <caracteristica 
+                    nombreRuta="Ruta Arqueologica" 
+                    tipo="Arqueologica" 
+                    transporte="Autobus" 
+                    fecha_inicio="2025-07-12" 
+                    duracion="8 horas" 
+                    agencia="Arqueotravel" 
+                    descripcion="Disfruta del patrimonio más importante del concejo con esta ruta por alguno de sus localizaciones clave" 
+                    publico="Recomendado a partir de 7 años"
+                />
+        </caracteristicas>
+
+        <inicio 
+            lugar_inicio="Termas Romanas de Valdunu" 
+            direccion_inicio="Lugar Valdunu, 25A, 33190, Asturias" 
+            longitud_inicio="6° 0' 19.03'' W" 
+            latitud_inicio="43° 23' 27.99'' N" 
+            altitud_inicio="60"
+        />
+
+        <info
+            recomendacion = "7.5"
+        />
+
+        <referencias>
+            <referencia enlace="https://www.vivirasturias.com/datos-basicos/c/0/i/54716973/turismo-en-las-regueras"/>
+            <referencia enlace="https://www.lasregueras.es/patrimonio-monumental"/>
+            <referencia enlace="https://www.turismoasturias.es/es/descubre/donde-ir/municipios/las-regueras"/>
+        </referencias>
+
+        <hitos>
+            <hito 
+                nombre="Termas romanas de Valduno" 
+                descripcion="Los restos de unas termas romanas en la localidad de Valduno, al lado de la iglesia" 
+                longitud="6° 0' 19.03'' W" 
+                latitud="43° 23' 27.99'' N" 
+                altitud="60" 
+                distancia="0">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/termas.jpg" alt="termas"/>
+                </galeria_imagenes>
+            </hito>
+            
+            <hito 
+                nombre="Iglesia de Santa Eulalia de Valdunu" 
+                descripcion="Una pequeña iglesia del pueblo con vistas al principal río de Las Regueras, el Nalón" 
+                longitud="6° 0' 18.14'' W" 
+                latitud="43° 23' 27.43'' N"  
+                altitud="61" 
+                distancia="27">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/santa_eulalia.jpg" alt="santa eulalia"/>
+                </galeria_imagenes>
+
+            </hito>
+
+            <hito 
+                nombre="Palacio de Bolgues" 
+                descripcion="Un pequeño palacio en la localidad de Bolgues" 
+                longitud="6° 0' 59.95'' W" 
+                latitud="43° 24' 9.92'' N" 
+                altitud="115" 
+                distancia="3200">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/bolgues.jpg" alt="bolgues"/>
+                </galeria_imagenes>
+
+            </hito>
+
+            <hito 
+                nombre="Iglesia de San Pedro de Nora" 
+                descripcion="Una preciosa iglesia catolica en Nora, situada cerca del río Nora." 
+                longitud="5° 57' 41.65'' W" 
+                latitud="43° 22' 9.34'' N" 
+                altitud="88" 
+                distancia="10500">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/san_pedro_de_nora.jpg" alt="san pedro de nora"/>
+                </galeria_imagenes>
+
+            </hito>
+
+            <hito 
+                nombre="Iglesia de Valsera" 
+                descripcion="La última iglesia de la ruta, ubicada en Valsera" 
+                longitud="5° 57' 0.12'' W" 
+                latitud="43° 23' 38.11'' N" 
+                altitud="250" 
+                distancia="3500">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/iglesia_valsera.jpg" alt="iglesia valsera"/>
+                </galeria_imagenes>
+
+            </hito>
+
+        </hitos>
+
+        <planimetria src="xml/ruta_arqueologica.kml"/>
+
+        <altimetria src="xml/ruta_arqueologica.svg" />
+    </ruta>
+    
+    <ruta>
+
+        <caracteristicas>
+                <caracteristica 
+                    nombreRuta="Ruta Senderismo" 
+                    tipo="Senderismo" 
+                    transporte="A pie" 
+                    fecha_inicio="2025-07-06" 
+                    duracion="4 horas" 
+                    agencia="Club de Senderismo local" 
+                    descripcion="Un paseo desde el area recreativa de las Llamuergas hasta la fuente Las Ablanosas" 
+                    publico="No apto para principiantes o menores"
+                />
+        </caracteristicas>
+
+        <inicio 
+            lugar_inicio="Area recreativa Las Llamuergas" 
+            direccion_inicio="Area recreativa Las Llamuergas, 33190, Asturias" 
+            longitud_inicio="6° 1' 18.85'' W" 
+            latitud_inicio="43° 24' 25.59'' N" 
+            altitud_inicio="146"
+        />
+
+        <info
+            recomendacion = "8"
+        />
+
+        <referencias>
+            <referencia enlace="https://maps.app.goo.gl/rdqzFzFNj4gJ2fJ17"/>
+            <referencia enlace="https://maps.app.goo.gl/Cj4m4TgLtwNMHvQa9"/>
+            <referencia enlace="https://www.lasregueras.es/turismo-rural"/>
+        </referencias>
+
+        <hitos>
+            <hito 
+                nombre="Area Recreativa Las Llamuergas" 
+                descripcion="El inicio de la ruta en una zona recreativa." 
+                longitud="6° 1' 18.85'' W" 
+                latitud="43° 24' 25.59'' N" 
+                altitud="146"
+                distancia="0">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/llamuergas.jpg" alt="llamuergas"/>
+                </galeria_imagenes>
+            
+            </hito>
+
+            <hito 
+                nombre="Primer Hito" 
+                descripcion="Has recorrido 120 m" 
+                longitud="6° 1' 16.66'' W" 
+                latitud="43° 24' 28.89'' N" 
+                altitud="152" 
+                distancia="120">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/120m.jpg" alt="120 metros"/>
+                </galeria_imagenes>
+
+            </hito>
+
+            <hito 
+                nombre="Segundo Hito" 
+                descripcion="Has recorrido 500 m" 
+                longitud="6° 1' 23.68'' W" 
+                latitud="43° 24' 38.92'' N" 
+                altitud="199" 
+                distancia="380">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/500m.jpg" alt="500 metros"/>
+                </galeria_imagenes>
+            
+            </hito>
+
+            <hito 
+                nombre="Tercer Hito" 
+                descripcion="Has recorrido 1000 m" 
+                longitud="6° 1' 30.81'' W" 
+                latitud="43° 24' 53.58'' N" 
+                altitud="355" 
+                distancia="500">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/1000m.jpg" alt="1000 metros"/>
+                </galeria_imagenes>
+            
+            </hito>
+
+            <hito 
+                nombre="Fuente Las Ablanosas" 
+                descripcion="El final del recorrido en una fuente de agua potable" 
+                longitud="6° 1' 13.40'' W" 
+                latitud="43° 25' 16.27'' N" 
+                altitud="320" 
+                distancia="1136">
+            
+                <galeria_imagenes>
+                    <foto src="multimedia/imagenes/fuente.jpg" alt="fuente"/>
+                </galeria_imagenes>
+
+            </hito>
+
+        </hitos>
+
+        <planimetria src="xml/ruta_senderismo.kml"/>
+
+        <altimetria src="xml/ruta_senderismo.svg" />
+    </ruta>
+
+</rutas>

@@ -1,0 +1,54 @@
+<!ELEMENT rutas (ruta+)>
+<!ELEMENT ruta (caracteristicas, inicio, info, referencias, hitos, planimetria, altimetria)>
+<!ELEMENT caracteristicas (caracteristica+)>
+<!ELEMENT caracteristica (#PCDATA)>
+
+<!ELEMENT inicio (#PCDATA)>
+<!ELEMENT info (#PCDATA)>
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (galeria_imagenes, galeria_videos?)>
+
+<!ELEMENT galeria_imagenes (foto+)>
+<!ELEMENT foto (#PCDATA)>
+
+<!ELEMENT galeria_videos (video*)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT planimetria (#PCDATA)>
+<!ELEMENT altimetria (#PCDATA)>
+
+
+<!ATTLIST caracteristica nombreRuta CDATA #REQUIRED>
+<!ATTLIST caracteristica tipo CDATA #REQUIRED>
+<!ATTLIST caracteristica transporte CDATA #REQUIRED>
+<!ATTLIST caracteristica fecha_inicio CDATA #REQUIRED>
+<!ATTLIST caracteristica duracion CDATA #REQUIRED>
+<!ATTLIST caracteristica agencia CDATA #REQUIRED>
+<!ATTLIST caracteristica descripcion CDATA #REQUIRED>
+<!ATTLIST caracteristica publico CDATA #REQUIRED>
+
+<!ATTLIST inicio lugar_inicio CDATA #REQUIRED>
+<!ATTLIST inicio direccion_inicio CDATA #REQUIRED>
+<!ATTLIST inicio longitud_inicio CDATA #REQUIRED>
+<!ATTLIST inicio latitud_inicio CDATA #REQUIRED>
+<!ATTLIST inicio altitud_inicio CDATA #REQUIRED>
+
+<!ATTLIST referencia enlace CDATA #REQUIRED>
+<!ATTLIST info recomendacion CDATA #REQUIRED>
+
+<!ATTLIST hito nombre CDATA #REQUIRED>
+<!ATTLIST hito descripcion CDATA #REQUIRED>
+<!ATTLIST hito longitud CDATA #REQUIRED>
+<!ATTLIST hito latitud CDATA #REQUIRED>
+<!ATTLIST hito altitud CDATA #REQUIRED>
+<!ATTLIST hito distancia CDATA #REQUIRED>
+
+<!ATTLIST foto src CDATA #REQUIRED>
+<!ATTLIST foto alt CDATA #REQUIRED>
+<!ATTLIST video src CDATA #REQUIRED>
+<!ATTLIST video alt CDATA #REQUIRED>
+
+<!ATTLIST planimetria src CDATA #REQUIRED>
+<!ATTLIST altimetria src CDATA #REQUIRED>

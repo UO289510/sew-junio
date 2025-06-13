@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark><name>Area Recreativa Las Llamuergas</name><Point><coordinates>-6.021902777777778,43.40710833333333,146</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Primer Hito</name><Point><coordinates>-6.021294444444444,43.408025,152</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Segundo Hito</name><Point><coordinates>-6.023244444444444,43.41081111111111,199</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Tercer Hito</name><Point><coordinates>-6.025225,43.41488333333333,355</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Fuente Las Ablanosas</name><Point><coordinates>-6.020388888888889,43.42118611111111,320</coordinates><altitudeMode>clampToGround</altitudeMode></Point></Placemark><Placemark><name>Ruta 3</name><LineString><extrude>1</extrude><tessellate>1</tessellate><altitudeMode>clampToGround</altitudeMode><coordinates>
+-6.021902777777778,43.40710833333333,146
+-6.021294444444444,43.408025,152
+-6.023244444444444,43.41081111111111,199
+-6.025225,43.41488333333333,355
+-6.020388888888889,43.42118611111111,320
+</coordinates></LineString></Placemark></Document></kml>
