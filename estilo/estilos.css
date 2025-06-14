@@ -51,8 +51,8 @@ h3 {
 }
 
 /*Especifidad 011*/
-p:first-of-type{
-    color:rgb(68, 68, 68);
+header + p {
+    color:rgb(0, 0, 0);
     font-size:medium;
     /*background-color se hereda de body*/
 }
@@ -299,8 +299,7 @@ main>section:nth-of-type(2) article p{
 }
 
 canvas {
-
     width: 500px;
     height: 500px;
-
 }
+
