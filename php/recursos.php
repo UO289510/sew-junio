@@ -93,7 +93,7 @@ class Recursos{
 
         $html.="<form action='#' method='post' name='formulario' ><input type='submit' name='recursos' value='Volver a recursos'></form>";
 
-        $html.="<table><thead><tr><th scope='col'>Recurso</th><th scope='col'>Fechas</th><th scope='col'>Plazas</th><th scope='col'>Total</th><th scope='col'>Estado</th><th scope='col'>Operaciones</th></tr></thead>";
+        $html.="<table><thead><tr><th scope='col'>Recurso</th><th scope='col'>Plazas</th><th scope='col'>Total</th><th scope='col'>Estado</th><th scope='col'>Operaciones</th></tr></thead>";
         $html.="<tbody>";
         if($result->num_rows > 0){
             while($row = $result->fetch_assoc()){
@@ -106,7 +106,6 @@ class Recursos{
                 $nombreRecurso = $resultadoNombreRecurso->fetch_assoc();
 
                 $html.="<td>" . $nombreRecurso['nombre'] . "</td>";
-                $html.="<td>" . $row['fecha_reserva'] . "</td>";
                 $html.="<td>" . $row['plazas'] . "</td>";
                 $html.="<td>" . $row['total'] . "€ </td>";
                 $html.="<td>" . $row['estado'] . "</td>";
@@ -210,18 +209,37 @@ class Recursos{
             echo "<h4>Ha ocurrido un error </h4>";
         }else{
 
-            $plazasRestantes = $plazasOriginales-$plazas;
-            $prepQuery = $this->db->prepare("UPDATE `recursos` SET `plazas`=? WHERE id=?");
-            $prepQuery->bind_param("ii",$plazasRestantes, $recursoId);
+            $prepQuery = $this->db->prepare("SELECT * FROM mis_reservas WHERE usuario_id=? AND recurso_id=? ORDER BY fecha_reserva DESC LIMIT 1");
+            $prepQuery->bind_param("ii", $user_id, $recursoId);
+
+            $prepQuery->execute();
+            $result = $prepQuery->get_result()->fetch_assoc();
+            $prepQuery->close();
+            $reservaId = $result["id"];
+
+            $accion = "creada";
+            $prepQuery = $this->db->prepare("INSERT INTO log_reservas (reserva_id, accion, fecha) VALUES (?, ?, ?)");
+            $prepQuery->bind_param("iss", $reservaId, $accion, $fecha);
             $prepQuery->execute();
             $result = $prepQuery->affected_rows;
-            $prepQuery->close();
 
             if($result == 0){
-                echo "<h4> Ha ocurrido un error </h4>";
+                echo "<h4>Ha ocurrido un error</h4>";
             }else{
-                $this->loadMisRecursos();
+                $plazasRestantes = $plazasOriginales-$plazas;
+                $prepQuery = $this->db->prepare("UPDATE recursos SET plazas=? WHERE id=?");
+                $prepQuery->bind_param("ii",$plazasRestantes, $recursoId);
+                $prepQuery->execute();
+                $result = $prepQuery->affected_rows;
+                $prepQuery->close();
+    
+                if($result == 0){
+                    echo "<h4> Ha ocurrido un error </h4>";
+                }else{
+                    $this->loadMisRecursos();
+                }
             }
+
         }
     }
 
@@ -248,32 +266,48 @@ class Recursos{
         $result = $prepQuery->get_result()->fetch_assoc();
 
         $plazasLiberadas = $result["plazas"];
+        $reservaId = $result["id"];
+        $reservaFecha = $result["fecha_reserva"];
 
         $plazasTotales = $plazasOriginales+$plazasLiberadas;
 
         $newState = "anulada";
 
-        $prepQuery = $this->db->prepare("UPDATE mis_reservas SET estado=? WHERE recurso_id=? AND usuario_id=?");
-        $prepQuery->bind_param("sii", $newState, $recursoId, $_SESSION["user_id"]);
+        $prepQuery = $this->db->prepare("UPDATE mis_reservas SET estado=? WHERE recurso_id=? AND usuario_id=? AND fecha_reserva=?");
+        $prepQuery->bind_param("siis", $newState, $recursoId, $_SESSION["user_id"], $reservaFecha);
         $prepQuery->execute();
         $result = $prepQuery->affected_rows;
         $prepQuery->close();
 
         if($result == 0){
             echo "<h4>Ha ocurrido un error</h4>";
-        }else{
+        }else{ 
 
-            $prepQuery = $this->db->prepare("UPDATE recursos SET plazas=? WHERE id=?");
-            $prepQuery->bind_param("ii", $plazasTotales, $recursoId);
+            $accion = "anulada";
+            $fechaCancelacion = new DateTime();
+            $fecha = $fechaCancelacion->format("Y-m-d H:i:s");
+            
+            $prepQuery = $this->db->prepare("INSERT INTO log_reservas(reserva_id, accion, fecha) VALUES (?,?,?)");
+            $prepQuery->bind_param("iss", $reservaId, $accion, $fecha);
             $prepQuery->execute();
             $result = $prepQuery->affected_rows;
-            $prepQuery->close();
 
             if($result == 0){
                 echo "<h4>Ha ocurrido un error</h4>";
             }else{
-                $this->loadMisRecursos();
+                $prepQuery = $this->db->prepare("UPDATE recursos SET plazas=? WHERE id=?");
+                $prepQuery->bind_param("ii", $plazasTotales, $recursoId);
+                $prepQuery->execute();
+                $result = $prepQuery->affected_rows;
+                $prepQuery->close();
+    
+                if($result == 0){
+                    echo "<h4>Ha ocurrido un error</h4>";
+                }else{
+                    $this->loadMisRecursos();
+                }
             }
+
         }
 
     }
