@@ -81,22 +81,22 @@ class Juego {
         var i = 0;
 
         this.preguntas[this.index].opciones.forEach((opcion) => {
+            var label = document.createElement("label");
+
             var respuesta = document.createElement("input");
             respuesta.type = "radio";
-            respuesta.name = "respuesta"+this.index;
+            respuesta.name = "respuesta" + this.index;
             respuesta.value = i;
             respuesta.addEventListener("change", () => {
                 this.botonSiguiente.disabled = false;
             });
 
-            var label = document.createElement("label");
-            label.textContent = opcion;
-            
-            formulario.appendChild(respuesta);
+            label.appendChild(respuesta);
+            label.appendChild(document.createTextNode(opcion));
+
             formulario.appendChild(label);
 
             i++;
-
         });
         document.querySelector("form").append(formulario);
     }
