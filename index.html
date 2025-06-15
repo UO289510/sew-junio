@@ -44,11 +44,36 @@
 
             <article>
                     <h3>Galeria</h3>
-                    <img src="multimedia/imagenes/carrusel1.jpg" alt="Imagen 1" />
-                    <img src="multimedia/imagenes/carrusel2.jpg" alt="Imagen 2" />
-                    <img src="multimedia/imagenes/carrusel3.jpg" alt="Imagen 3" />
-                    <img src="multimedia/imagenes/carrusel4.jpg" alt="Imagen 4" />
-                    <img src="multimedia/imagenes/carrusel5.jpg" alt="Imagen 5" />
+                    <picture>
+                        <source srcset="multimedia/imagenes/carrusel1.webp" media="(min-width: 800px)" width="1440" height="960">
+                        <source srcset="multimedia/imagenes/carrusel1_mediana.webp" media="(max-width: 799px)" width="600" height="399">
+                        <source srcset="multimedia/imagenes/carrusel1_pequeño.webp" media="(max-width: 465px)" width="310" height="206">
+                        <img src="multimedia/imagenes/carrusel1.webp" alt="Carrusel 1">
+                    </picture>
+                    <picture>
+                        <source srcset="multimedia/imagenes/carrusel2.webp" media="(min-width: 800px)" width="1440" height="960">
+                        <source srcset="multimedia/imagenes/carrusel2_mediana.webp" media="(max-width: 799px)" width="600" height="399">
+                        <source srcset="multimedia/imagenes/carrusel2_pequeño.webp" media="(max-width: 465px)" width="310" height="206">
+                        <img src="multimedia/imagenes/carrusel2.webp" alt="Carrusel 2">
+                    </picture>
+                    <picture>
+                        <source srcset="multimedia/imagenes/carrusel3.webp" media="(min-width: 800px)" width="1440" height="960">
+                        <source srcset="multimedia/imagenes/carrusel3_mediana.webp" media="(max-width: 799px)" width="600" height="399">
+                        <source srcset="multimedia/imagenes/carrusel3_pequeño.webp" media="(max-width: 465px)" width="310" height="206">
+                        <img src="multimedia/imagenes/carrusel3.webp" alt="Carrusel 3">
+                    </picture>
+                    <picture>
+                        <source srcset="multimedia/imagenes/carrusel4.webp" media="(min-width: 800px)" width="1440" height="960">
+                        <source srcset="multimedia/imagenes/carrusel4_mediana.webp" media="(max-width: 799px)" width="600" height="399">
+                        <source srcset="multimedia/imagenes/carrusel4_pequeño.webp" media="(max-width: 465px)" width="310" height="206">
+                        <img src="multimedia/imagenes/carrusel4.webp" alt="Carrusel 4">
+                    </picture>
+                    <picture>
+                        <source srcset="multimedia/imagenes/carrusel5.webp" media="(min-width: 800px)" width="1440" height="960">
+                        <source srcset="multimedia/imagenes/carrusel5_mediana.webp" media="(max-width: 799px)" width="600" height="399">
+                        <source srcset="multimedia/imagenes/carrusel5_pequeño.webp" media="(max-width: 465px)" width="310" height="206">
+                        <img src="multimedia/imagenes/carrusel5.webp" alt="Carrusel 5">
+                    </picture>
                     <button> &gt; </button>
                     <button> &lt; </button>
                 </article>
