@@ -48,7 +48,7 @@
                 distancia="0">
 
                 <galeria_imagenes>
-                    <foto src = "multimedia/imagenes/casa_florinda.jpg" alt="casa florinda"/>
+                    <foto src = "multimedia/imagenes/casa_florinda.webp" alt="casa florinda"/>
                 </galeria_imagenes>
 
             </hito>
@@ -62,7 +62,7 @@
                 distancia="5100">
 
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/la_manduca.jpg" alt="la manduca"/>
+                    <foto src="multimedia/imagenes/la_manduca.webp" alt="la manduca"/>
                 </galeria_imagenes>
 
             </hito>
@@ -76,7 +76,7 @@
                 distancia="7800">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/el_tendejon.jpg" alt="el tendejon"/>
+                    <foto src="multimedia/imagenes/el_tendejon.webp" alt="el tendejon"/>
                 </galeria_imagenes>
             </hito>
 
@@ -89,7 +89,7 @@
                 distancia="4000">
 
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/casa_edelmiro.jpg" alt="casa edelmiro"/>
+                    <foto src="multimedia/imagenes/casa_edelmiro.webp" alt="casa edelmiro"/>
                 </galeria_imagenes>
 
             </hito>
@@ -103,7 +103,7 @@
                 distancia="20100">
 
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/la_cabaña_de_conce.jpg" alt="la cabaña de conce"/>
+                    <foto src="multimedia/imagenes/la_cabaña_de_conce.webp" alt="la cabaña de conce"/>
                 </galeria_imagenes>
 
             </hito>
@@ -158,7 +158,7 @@
                 distancia="0">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/termas.jpg" alt="termas"/>
+                    <foto src="multimedia/imagenes/termas.webp" alt="termas"/>
                 </galeria_imagenes>
             </hito>
             
@@ -171,7 +171,7 @@
                 distancia="27">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/santa_eulalia.jpg" alt="santa eulalia"/>
+                    <foto src="multimedia/imagenes/santa_eulalia.webp" alt="santa eulalia"/>
                 </galeria_imagenes>
 
             </hito>
@@ -185,7 +185,7 @@
                 distancia="3200">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/bolgues.jpg" alt="bolgues"/>
+                    <foto src="multimedia/imagenes/bolgues.webp" alt="bolgues"/>
                 </galeria_imagenes>
 
             </hito>
@@ -199,7 +199,7 @@
                 distancia="10500">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/san_pedro_de_nora.jpg" alt="san pedro de nora"/>
+                    <foto src="multimedia/imagenes/san_pedro_de_nora.webp" alt="san pedro de nora"/>
                 </galeria_imagenes>
 
             </hito>
@@ -213,7 +213,7 @@
                 distancia="3500">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/iglesia_valsera.jpg" alt="iglesia valsera"/>
+                    <foto src="multimedia/imagenes/iglesia_valsera.webp" alt="iglesia valsera"/>
                 </galeria_imagenes>
 
             </hito>
@@ -268,7 +268,7 @@
                 distancia="0">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/llamuergas.jpg" alt="llamuergas"/>
+                    <foto src="multimedia/imagenes/llamuergas.webp" alt="llamuergas"/>
                 </galeria_imagenes>
             
             </hito>
@@ -282,7 +282,7 @@
                 distancia="120">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/120m.jpg" alt="120 metros"/>
+                    <foto src="multimedia/imagenes/120m.webp" alt="120 metros"/>
                 </galeria_imagenes>
 
             </hito>
@@ -296,7 +296,7 @@
                 distancia="380">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/500m.jpg" alt="500 metros"/>
+                    <foto src="multimedia/imagenes/500m.webp" alt="500 metros"/>
                 </galeria_imagenes>
             
             </hito>
@@ -310,7 +310,7 @@
                 distancia="500">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/1000m.jpg" alt="1000 metros"/>
+                    <foto src="multimedia/imagenes/1000m.webp" alt="1000 metros"/>
                 </galeria_imagenes>
             
             </hito>
@@ -324,7 +324,7 @@
                 distancia="1136">
             
                 <galeria_imagenes>
-                    <foto src="multimedia/imagenes/fuente.jpg" alt="fuente"/>
+                    <foto src="multimedia/imagenes/fuente.webp" alt="fuente"/>
                 </galeria_imagenes>
 
             </hito>
